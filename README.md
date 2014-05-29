@@ -34,17 +34,17 @@ Results
 
 In Chrome Canary:
 
-linesToDraw: 5000
+linesToDraw: 10000
 
 Results sorted ascendingly with respect to execution times:
 
-- **drawLinesOnCanvasDirectly**: 12ms
-- **drawLinesOnCanvasOffScreen**: 15ms
-- **drawLinesUsingPixi**: 42ms
-- **drawLinesUsingWorkers** (algorithm: pixel, anti-aliasing: false): 269ms
-- **drawLinesUsingWorkers** (algorithm: png, anti-aliasing: false): 1044ms
-- **drawLinesUsingWorkers** (algorithm: pixel, anti-aliasing: true): 1490ms
-- **drawLinesUsingWorkers** (algorithm: png, anti-aliasing: true): 2715ms
+- **drawLinesOnCanvasDirectly**: 23ms
+- **drawLinesOnCanvasOffScreen**: 20ms
+- **drawLinesUsingPixi**: 78ms
+- **drawLinesUsingWorkers** (algorithm: pixel, anti-aliasing: false): 444ms
+- **drawLinesUsingWorkers** (algorithm: png, anti-aliasing: false): 1222ms
+- **drawLinesUsingWorkers** (algorithm: pixel, anti-aliasing: true): 3119ms
+- **drawLinesUsingWorkers** (algorithm: png, anti-aliasing: true): 4299ms
 
 
 Conclusion

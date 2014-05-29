@@ -5,12 +5,12 @@ canvasWebGl = undefined;
 contextWebGl = undefined;
 
 var settings = {
-    linesToDraw: 5000,
+    linesToDraw: 10000,
     numberOfWorkers: 8,
     width: window.innerWidth,
     height: window.innerHeight,
     algorithm: 'pixel', // 'png' or 'pixel'
-    antiAliasing: true,
+    antiAliasing: false,
     lineWidth: 1
 };
 
@@ -132,7 +132,7 @@ var drawLinesUsingWorkers = function drawLinesUsingWorkers() {
         }
 
         var end = +new Date();  // log end timestamp
-        console.log("drawLinesUsingWorkers (alorithm: " + settings.algorithm + ", anti-aliasing: " + settings.antiAliasing + "): " + (end - start) + "ms");
+        console.log("drawLinesUsingWorkers (algorithm: " + settings.algorithm + ", anti-aliasing: " + settings.antiAliasing + "): " + (end - start) + "ms");
 
     }, false);
 
