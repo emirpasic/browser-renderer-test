@@ -11,7 +11,7 @@ var settings = {
     height: window.innerHeight,
     algorithm: 'pixel', // 'png' or 'pixel'
     antiAliasing: true,
-    lineWidth: 2
+    lineWidth: 1
 };
 
 (function init() {

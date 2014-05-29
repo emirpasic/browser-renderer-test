@@ -2,6 +2,7 @@
   <dictionary name="SixSigma">
     <words>
       <w>pixi</w>
+      <w>webworkers</w>
     </words>
   </dictionary>
 </component>
