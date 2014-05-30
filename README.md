@@ -52,7 +52,7 @@ Conclusion
 
 HTML5 Canvas drawing is still the fastest.
 
-Worker based rendering is slow, especially if we turn on anti-aliasing, then we have to do the heavy work of [alpha compositing](http://en.wikipedia.org/wiki/Alpha_compositing). On the other hand, we can use PNG alpha channel to do this alpha compositing for us, but constructing the PNG image is slow. Hence, doing the alpha compositing is less expensive then constructing a PNG. Additionally one would need to implement a complete 2D drawing library to use this technique. The reasoning for attempting this was only to see if we could offload the drawing to the background and, thus, make the application more responsive.
+Worker based rendering is slow, especially if we turn on anti-aliasing, then we have to do the heavy work of [alpha compositing](http://en.wikipedia.org/wiki/Alpha_compositing). On the other hand, we can use PNG alpha channel to do this alpha compositing for us, but constructing the PNG image is slow. Hence, doing the alpha compositing is less expensive then constructing a PNG. Additionally one would need to implement a complete 2D drawing library to use this technique. The reasoning for attempting this was only to see if we could offload the drawing to the background and, thus, make the application more responsive. The reason why this method is slow is because of Javascript's slow random access to arrays ([link](http://jsfiddle.net/fG78v/)).
 
 WebGL drawing is about 3-5 times slower than canvas drawing. Although slower than canvas, being vector based, we might want to use this feature on our maps when zooming in and out as to avoid the pixelization with CSS scaling, wich is the case with [Leaflet](http://leafletjs.com/)
 
